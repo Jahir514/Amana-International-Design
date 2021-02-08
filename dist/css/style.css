@@ -110,52 +110,41 @@ a:hover {
   background-color: #1e1d23;
 }
 
+/* slick slider start */
+.slick-slide {
+  margin: 0 10px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 55%;
+  z-index: +1;
+  border: 1px solid #098036;
+  color: #098036;
+  width: 35px;
+  height: 35px;
+  line-height: 31px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  background-color: transparent;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none !important;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slick-arrow:hover {
+  background-color: #098036;
+  color: #ffffff;
+}
+/* slick slider End */
+
 /* rating stars style start */
-.sec-title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.tags .tag {
-  padding: .15rem .5rem;
-  font-size: .9rem;
-  border: 1px solid #ced4da;
-  border-radius: .7rem;
-  margin: .2rem .1rem;
-  display: inline-block;
-  color: #1e1d23;
-}
-
-.tags .tag:hover {
-  background-color: #f7f2e2;
-}
-
-.form-control {
-  border-color: #ced4da;
-}
-
-.custom-control-input:checked ~ .custom-control-label::before {
-  color: #fff;
-  border-color: #ffcc00;
-  background-color: #ffcc00;
-}
-
-.custom-control-input:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.2);
-          box-shadow: 0 0 0 0.2rem rgba(255, 204, 0, 0.2);
-}
-
 body, .form-control {
   font-size: 0.95rem;
   font-family: "Open Sans", sans-serif;
 }
-
-.topbar-left img {
-  width: 20px;
-}
-
+/* navbar start */
 .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
@@ -188,7 +177,9 @@ body, .form-control {
 .dropdown-menu .dropdown-item {
   font-size: 0.95rem;
 }
+/* navbar end */
 
+/******************** Home page css End *************************/
 .home .banner {
   position: relative;
 }
@@ -214,8 +205,8 @@ body, .form-control {
 }
 
 
-.banner:hover .carousel-control-prev-icon,
-.banner:hover .carousel-control-next-icon{
+.home .banner:hover .carousel-control-prev-icon,
+.home .banner:hover .carousel-control-next-icon{
   display: block;
 }
 .carousel-control-prev-icon,
@@ -291,38 +282,6 @@ body, .form-control {
   font-size: 1rem;
   color:#098036; 
 }
-
-/* the slides */
-.slick-slide {
-  margin: 0 10px;
-}
-
-/* the parent */
-
-.slick-arrow {
-  position: absolute;
-  top: 55%;
-  z-index: +1;
-  border: 1px solid #098036;
-  color: #098036;
-  width: 35px;
-  height: 35px;
-  line-height: 31px;
-  border-radius: 50%;
-  font-size: 1.4rem;
-  background-color: transparent;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: none !important;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.slick-arrow:hover {
-  background-color: #098036;
-  color: #ffffff;
-}
-
 .product:hover .slick-arrow,
 .banner:hover .slick-arrow {
   display: block !important;
@@ -357,6 +316,84 @@ body, .form-control {
   width: 11%;
 }
 /* career end */
+/******************** Home page css End *************************/
+
+
+/******************** About us page css Start *******************/
+
+/* banner start */
+.about-us .banner {
+  background-image: url("../images/1_Home Page 3.png");
+  min-height: 550px;
+  background-position: center center;
+  position: relative;
+}
+
+.about-us .banner-text {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/* banner end */
+
+/* Company overview start */
+.overview .icon{
+  width: 20%;
+}
+/* company overview end */
+
+/* brand start */
+.brand .icon{
+  width: 20%;
+}
+.brand-item {
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.brand-item-img img {
+  height: 300px;
+}
+
+.brand-item-title {
+  font-size: .8rem;
+}
+.brand-item-price{
+  font-size: 1rem;
+  color:#098036; 
+}
+.brand:hover .slick-arrow {
+  display: block !important;
+}
+
+/* brand end */
+
+/* vision start */
+.vision .icon{
+  width: 20%;
+}
+/* vision end */
+
+/* Business Unit start */
+.business-unit .icon{
+  width: 20%;
+}
+.btn-link:target .plus-icon{
+  display: none;
+}
+
+#accordion button{
+  color: #098036;
+}
+/* Business Unit End */
+
+/******************** About us page css End *********************/
+
+
+
+
 
 /* footer start */
 .footer {
