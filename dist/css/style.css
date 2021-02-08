@@ -155,6 +155,10 @@ body, .form-control {
   max-width: 75px;
 }
 
+.navbar-brand .logo-text p{
+  font-size: .7rem;
+  margin: 5px 0 0 2px ;
+}
 .custom-nav .nav-item {
   margin-left: 1.5rem;
 }
@@ -323,9 +327,6 @@ body, .form-control {
 
 /* banner start */
 .about-us .banner {
-  background-image: url("../images/1_Home Page 3.png");
-  min-height: 550px;
-  background-position: center center;
   position: relative;
 }
 
@@ -502,9 +503,21 @@ body, .form-control {
 /* footer end */
 
 
+
 @media (max-width: 1200px) {
   body, .form-control {
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-brand .logo-text span{
+    font-size: 1rem;
+    
+  }
+  .navbar-brand .logo-text p{
+    font-size: .5rem;
+    
   }
 }
 
