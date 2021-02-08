@@ -64,7 +64,7 @@ a:hover {
 }
 
 .btn-theme:hover {
-  background-color: #16e967;
+  background-color: #0fbd51;
   color: #ffffff;
 }
 
@@ -187,20 +187,18 @@ body, .form-control {
 .home .banner {
   position: relative;
 }
-
+.home .banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .home .banner .btn-theme {
   position: absolute;
   left: 50%;
   bottom: -29px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-.home .banner-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .home .banner-slogan {
@@ -330,7 +328,16 @@ body, .form-control {
   position: relative;
 }
 
+.about-us .banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .about-us .banner-text {
+  color: #ffffff;
+  text-align: center;
   position: absolute;
   left: 50%;
   top: 40%;
@@ -355,7 +362,7 @@ body, .form-control {
 }
 
 .brand-item-img img {
-  height: 300px;
+  height: 150px;
 }
 
 .brand-item-title {
