@@ -1,11 +1,45 @@
+/*****************
+*** CSS INDEX
+******************/
+/* 1.Global CSS
+      .Mobile menu icon 
+      .Slick Slider Design
+      .Bootstrap Carousel
+      .Main Menu
+
+   2.Home page CSS
+      .Banner
+      .Product
+      .Latest News
+      .Sustainablity
+      .Career
+      
+   3.About us page CSS
+     .Banner
+     .Company Overview
+     .Leading Position Product
+     .Brands
+     .Vision
+     .Business Unit
+
+   4.Product Page CSS
+  
+  
+*/
+
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-/* hamburger menu start */
-.header-nav #hamburger {
+
+
+/* mobile menu start */
+.header-nav #mobile-menu  {
   cursor: pointer;
 }
 
-.header-nav #hamburger span {
+.header-nav #mobile-menu  span {
   height: 2px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -16,34 +50,35 @@
   margin-left: 0;
 }
 
-.header-nav #hamburger span:nth-child(1) {
+.header-nav #mobile-menu span:nth-child(1) {
   width: 12px;
 }
 
-.header-nav #hamburger span:nth-child(2) {
+.header-nav #mobile-menu span:nth-child(2) {
   width: 24px;
 }
 
-.header-nav #hamburger span:nth-child(3) {
+.header-nav #mobile-menu span:nth-child(3) {
   width: 12px;
 }
 
-.header-nav .display_menu #hamburger span:nth-child(1) {
+.header-nav .display_menu #mobile-menu span:nth-child(1) {
   -webkit-transform: rotate(45deg) translate(2px, 1px);
   transform: rotate(45deg) translate(2px, 1px);
 }
 
-.header-nav .display_menu #hamburger span:nth-child(2) {
+.header-nav .display_menu #mobile-menu span:nth-child(2) {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-.header-nav .display_menu #hamburger span:nth-child(3) {
+.header-nav .display_menu #mobile-menu span:nth-child(3) {
   -webkit-transform: rotate(45deg) translate(6px, -9px);
   transform: rotate(45deg) translate(6px, -9px);
 }
 
-/* hamburger menu end */
+/* mobile menu end */
+
 button:focus {
   outline: none;
 }
@@ -110,6 +145,13 @@ a:hover {
   background-color: #1e1d23;
 }
 
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 /* slick slider start */
 .slick-slide {
   margin: 0 10px;
@@ -139,78 +181,8 @@ a:hover {
 }
 /* slick slider End */
 
-/* rating stars style start */
-body, .form-control {
-  font-size: 0.95rem;
-  font-family: "Open Sans", sans-serif;
-}
-/* navbar start */
-.navbar-brand {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-right: 0;
-}
 
-.navbar-brand img {
-  max-width: 75px;
-}
-
-.navbar-brand .logo-text p{
-  font-size: .7rem;
-  margin: 5px 0 0 2px ;
-}
-.custom-nav .nav-item {
-  margin-left: 1.5rem;
-}
-
-.custom-nav .nav-item .nav-link {
-  color: #696969;
-  padding: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.custom-nav .nav-item .nav-link:hover, .custom-nav .nav-item .nav-link:active, .custom-nav .nav-item .nav-link:focus {
-  color: #098036;
-}
-
-.custom-nav .nav-item.active .nav-link {
-  color: #098036;
-}
-
-.dropdown-menu .dropdown-item {
-  font-size: 0.95rem;
-}
-/* navbar end */
-
-/******************** Home page css End *************************/
-.home .banner {
-  position: relative;
-}
-.home .banner-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.home .banner .btn-theme {
-  position: absolute;
-  left: 50%;
-  bottom: -29px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.home .banner-slogan {
-  font-family: "Great Vibes", cursive;
-  font-size: 2rem;
-}
-
-
-.home .banner:hover .carousel-control-prev-icon,
-.home .banner:hover .carousel-control-next-icon{
-  display: block;
-}
+/* bootstrap carousel start */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 40px;
@@ -259,7 +231,72 @@ body, .form-control {
   color: #ffffff !important;
 }
 
+/* bootstrap carousel end */
 
+body, .form-control {
+  font-size: 0.95rem;
+  font-family: "Open Sans", sans-serif;
+}
+/* navbar start */
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
+
+.navbar-brand img {
+  max-width: 75px;
+}
+
+.navbar-brand .logo-text p{
+  font-size: .7rem;
+  margin: 5px 0 0 2px ;
+}
+.custom-nav .nav-item {
+  margin-left: 1.5rem;
+}
+
+.custom-nav .nav-item .nav-link {
+  color: #696969;
+  padding: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.custom-nav .nav-item .nav-link:hover, .custom-nav .nav-item .nav-link:active, .custom-nav .nav-item .nav-link:focus {
+  color: #098036;
+}
+
+.custom-nav .nav-item.active .nav-link {
+  color: #098036;
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 0.95rem;
+}
+/* navbar end */
+
+/******************** Home page css Start *************************/
+.home .banner {
+  position: relative;
+}
+.home .banner .btn-theme {
+  position: absolute;
+  left: 50%;
+  bottom: -29px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.home .banner-slogan {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+}
+
+.home .banner:hover .carousel-control-prev-icon,
+.home .banner:hover .carousel-control-next-icon{
+  display: block;
+}
 
 /*---product-item----*/
 .product, .sustainability{
@@ -327,14 +364,6 @@ body, .form-control {
 .about-us .banner {
   position: relative;
 }
-
-.about-us .banner-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .about-us .banner-text {
   color: #ffffff;
   text-align: center;
@@ -398,6 +427,74 @@ body, .form-control {
 /* Business Unit End */
 
 /******************** About us page css End *********************/
+
+
+/******************** Product page css Start *******************/
+/* banner start */
+.product-page .banner{
+  position: relative;
+}
+
+.product-page .banner-text {
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* banner end */
+
+/* products and services start */
+.product-services .icon{
+  width: 20%;
+}
+.product-services-content img{
+  height: 60px;
+  width: 50px;
+}
+.product-services-content select{
+  width: 60%;
+  height: 25%;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.product-services-content input{
+  position: relative;
+  width: 50%;
+}
+.product-services-content .btn{
+  position: absolute;
+  top: 0;
+  right:0;
+  color: #6c757d;
+  z-index: 111;
+}
+
+.input-group>.custom-select:not(:last-child), 
+.input-group>.form-control:not(:last-child) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.product-services-content .input-group{
+  width: 60%;
+  margin-left: 4.5rem;
+}
+
+.product-services-content .form-control:focus, .product-services-content select:focus  {
+  color: #495057;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(9, 128, 54, .5);
+}
+
+/* products and services end */
+
+/******************** Product page css End *******************/
 
 
 

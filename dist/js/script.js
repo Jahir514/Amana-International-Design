@@ -1,7 +1,10 @@
 
 $(function() {
     // navbar dropdown end
-
+    function display_menu(){
+        var nav_container = document.querySelector('.nav-container');
+        (!nav_container.classList.contains("display_menu")) ? nav_container.classList.add("display_menu") : nav_container.classList.remove("display_menu");
+    }
     $('.product-slider').slick({
         infinite: true,
         slidesToShow: 4,
