@@ -431,11 +431,15 @@ body, .form-control {
 
 /******************** Product page css Start *******************/
 /* banner start */
-.product-page .banner{
+.product-page .banner, .single-product-page .banner, .about-us .banner{
   position: relative;
+  max-height: 400px;
 }
-
-.product-page .banner-text {
+.product-page .banner img, .single-product-page .banner img, .about-us .banner img{
+  max-height: 400px;
+  width: 100%;
+}
+.product-page .banner-text, .single-product-page .banner-text, .about-us .banner-text {
   color: #ffffff;
   text-align: center;
   position: absolute;
@@ -496,8 +500,48 @@ body, .form-control {
 
 /******************** Product page css End *******************/
 
+/******************** Single Product page css Start *******************/
 
+/* product details start */
+.product-details-content .flag-img,
+.product-details-content .certify-img{
+  width: 90px;
+}
+.product-details-content .product-img{
+  width: 300px;
+}
+.product-details-content h3{
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.product-details-content h3 span{
+  letter-spacing: 6px;
+}
+/* product details end */
 
+/* product protfolio start */
+.product-portfolio{
+  background-color: #fbfafe
+}
+.product-portfolio .icon{
+  width: 20%;
+}
+.product-img img {
+  height: 300px;
+}
+
+.product-title {
+  font-size: .8rem;
+}
+.product-price{
+  font-size: 1rem;
+  color:#098036; 
+}
+
+/* product portfolio en */
+
+/******************** Single Product page css End *******************/
 
 
 /* footer start */
@@ -663,24 +707,19 @@ body, .form-control {
 }
 
 @media (max-width: 575.98px) {
-  .tags .tag {
-    font-size: .8rem;
+  
+  .banner-text h2{
+    font-size: 1.3rem;
   }
-  .topbar {
-    text-align: center;
+  .banner-text {
+    font-size: .7rem;
   }
-  .topbar-left {
-    margin-bottom: 7px;
+  /* single prodtuct page */
+  .product-details-content .made-in,
+  .product-details-content .certify{
+    justify-content: center;
   }
-  .topbar-right {
-    text-align: center !important;
-  }
-  .banner-title {
-    font-size: 2rem;
-  }
-  .home .banner-title {
-    font-size: 2rem;
-  }
+
 }
 
 
