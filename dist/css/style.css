@@ -459,41 +459,69 @@ body, .form-control {
   height: 60px;
   width: 50px;
 }
-.product-services-content select{
-  width: 60%;
-  height: 25%;
-  border-radius: 5px;
-  border: 1px solid #ced4da;
+
+.product-services-content .channel-icon,
+.product-services-content .location-icon{
+  height: 20px;
+  width: 20px;
 }
 
-.product-services-content input{
-  position: relative;
-  width: 50%;
-}
-.product-services-content .btn{
-  position: absolute;
-  top: 0;
-  right:0;
-  color: #6c757d;
-  z-index: 111;
+.product-services-content .search-icon{
+  color: #098036;
 }
 
-.input-group>.custom-select:not(:last-child), 
-.input-group>.form-control:not(:last-child) {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+.search-form {
+  background-color: #ddd;
+  border-radius: .3rem; 
 }
-
-.product-services-content .input-group{
-  width: 60%;
-  margin-left: 4.5rem;
+.search-form .form-group {
+    margin-bottom: 0; 
 }
-
-.product-services-content .form-control:focus, .product-services-content select:focus  {
-  color: #495057;
-  background-color: #fff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(9, 128, 54, .5);
+.search-form .form .input-group-text {
+    background-color: #eefcff;
+    border: none;
+}
+.search-form .form .cus-form-grp {
+    position: relative;
+    height: 50px; 
+}
+.search-form .form .cus-prepend {
+    position: absolute;
+    z-index: +1;
+    height: inherit; 
+}
+.search-form .form .cus-input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.search-form .form .cus-input .form-control {
+    padding-left: 40px; 
+}
+ .search-form .form-control, .search-form .form select {
+    border: none;
+    background-color: #eefcff;
+    height: 50px;
+    font-size: 0.95rem;
+    padding-left: 0; 
+}
+.search-form .form-control:focus, 
+.search-form .form-control:focus-within, 
+.search-form .form select:focus, #home-banner 
+.search-form .form select:focus-within {
+    outline: none;
+    box-shadow: unset; 
+}
+.search-form .form-control::placeholder, .search-form .form select::placeholder {
+  font-style: italic; 
+}
+ .search-form .form select {
+    cursor: pointer; 
+}
+ .search-form .form .btn {
+    height: 50px;
+    background-color: #098036;
+    color: #fff;
 }
 
 /* products and services end */
