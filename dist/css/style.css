@@ -6,6 +6,8 @@
       .Slick Slider Design
       .Bootstrap Carousel
       .Main Menu
+      .Banner (except Home page)
+      .Footer
 
    2.Home page CSS
       .Banner
@@ -23,6 +25,21 @@
      .Business Unit
 
    4.Product Page CSS
+     .Heading
+     .Search
+     .All Product
+
+   5.Single Product Page CSS
+     .Single product
+     .Product Portfolio
+
+   6.Product Details Page CSS
+     .product details
+     .related product 
+     
+   7.News
+   8.Single News
+      
   
   
 */
@@ -179,6 +196,13 @@ a:hover {
   background-color: #098036;
   color: #ffffff;
 }
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
 /* slick slider End */
 
 
@@ -276,170 +300,17 @@ body, .form-control {
 }
 /* navbar end */
 
-/******************** Home page css Start *************************/
-.home .banner {
-  position: relative;
-}
-.home .banner .btn-theme {
-  position: absolute;
-  left: 50%;
-  bottom: -29px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.home .banner-slogan {
-  font-family: "Great Vibes", cursive;
-  font-size: 2rem;
-}
-
-.home .banner:hover .carousel-control-prev-icon,
-.home .banner:hover .carousel-control-next-icon{
-  display: block;
-}
-
-/*---product-item----*/
-.product, .sustainability{
-  background-color: #fbfafe;
-}
-.product .heading img{
-  width: 20%;
-}
-.product-item {
-  border-radius: .5rem;
-  padding: 1rem;
-}
-
-.product-item-img img {
-  height: 300px;
-}
-
-.product-item-title {
-  font-size: .8rem;
-}
-.product-item-price{
-  font-size: 1rem;
-  color:#098036; 
-}
-.product:hover .slick-arrow,
-.banner:hover .slick-arrow {
-  display: block !important;
-}
-
-.slick-prev {
-  left: 0;
-}
-
-.slick-next {
-  right: 0;
-}
-
-/* latest news start */
-.latest-news .heading img{
-  width: 15%;
-}
-/* Latest news end */
-
-/* Sustainability start */
-.sustainability-content .text{
-  line-height: 1.8;
-}
-.sustainability .heading img{
-  width: 15%;
-}
-/* Sustainability end */
-
-/* career start */
-
-.career .heading img{
-  width: 11%;
-}
-/* career end */
-/******************** Home page css End *************************/
-
-
-/******************** About us page css Start *******************/
 
 /* banner start */
-.about-us .banner {
-  position: relative;
-}
-.about-us .banner-text {
-  color: #ffffff;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-/* banner end */
-
-/* Company overview start */
-.overview .icon{
-  width: 20%;
-}
-/* company overview end */
-
-/* brand start */
-.brand .icon{
-  width: 20%;
-}
-.brand-item {
-  border-radius: .5rem;
-  padding: 1rem;
-}
-
-.brand-item-img img {
-  height: 150px;
-}
-
-.brand-item-title {
-  font-size: .8rem;
-}
-.brand-item-price{
-  font-size: 1rem;
-  color:#098036; 
-}
-.brand:hover .slick-arrow {
-  display: block !important;
-}
-
-/* brand end */
-
-/* vision start */
-.vision .icon{
-  width: 20%;
-}
-/* vision end */
-
-/* Business Unit start */
-.business-unit .icon{
-  width: 20%;
-}
-.btn-link:target .plus-icon{
-  display: none;
-}
-
-#accordion button{
-  color: #098036;
-}
-/* Business Unit End */
-
-/******************** About us page css End *********************/
-
-
-/******************** Product page css Start *******************/
-/* banner start */
-.product-page .banner, .single-product-page .banner, .about-us .banner{
+.banner{
   position: relative;
   max-height: 400px;
 }
-.product-page .banner img, .single-product-page .banner img, .about-us .banner img{
+.banner img{
   max-height: 400px;
   width: 100%;
 }
-.product-page .banner-text, .single-product-page .banner-text, .about-us .banner-text {
+.banner-text {
   color: #ffffff;
   text-align: center;
   position: absolute;
@@ -450,126 +321,6 @@ body, .form-control {
 }
 
 /* banner end */
-
-/* products and services start */
-.product-services .icon{
-  width: 20%;
-}
-.product-services-content img{
-  height: 60px;
-  width: 50px;
-}
-
-.product-services-content .channel-icon,
-.product-services-content .location-icon{
-  height: 20px;
-  width: 20px;
-}
-
-.product-services-content .search-icon{
-  color: #098036;
-}
-
-.search-form {
-  background-color: #ddd;
-  border-radius: .3rem; 
-}
-.search-form .form-group {
-    margin-bottom: 0; 
-}
-.search-form .form .input-group-text {
-    background-color: #eefcff;
-    border: none;
-}
-.search-form .form .cus-form-grp {
-    position: relative;
-    height: 50px; 
-}
-.search-form .form .cus-prepend {
-    position: absolute;
-    z-index: +1;
-    height: inherit; 
-}
-.search-form .form .cus-input {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-.search-form .form .cus-input .form-control {
-    padding-left: 40px; 
-}
- .search-form .form-control, .search-form .form select {
-    border: none;
-    background-color: #eefcff;
-    height: 50px;
-    font-size: 0.95rem;
-    padding-left: 0; 
-}
-.search-form .form-control:focus, 
-.search-form .form-control:focus-within, 
-.search-form .form select:focus, #home-banner 
-.search-form .form select:focus-within {
-    outline: none;
-    box-shadow: unset; 
-}
-.search-form .form-control::placeholder, .search-form .form select::placeholder {
-  font-style: italic; 
-}
- .search-form .form select {
-    cursor: pointer; 
-}
- .search-form .form .btn {
-    height: 50px;
-    background-color: #098036;
-    color: #fff;
-}
-
-/* products and services end */
-
-/******************** Product page css End *******************/
-
-/******************** Single Product page css Start *******************/
-
-/* product details start */
-.product-details-content .flag-img,
-.product-details-content .certify-img{
-  width: 90px;
-}
-.product-details-content .product-img{
-  width: 300px;
-}
-.product-details-content h3{
-  font-size: 18px;
-  margin-top: 5px;
-  font-weight: bold;
-}
-.product-details-content h3 span{
-  letter-spacing: 6px;
-}
-/* product details end */
-
-/* product protfolio start */
-.product-portfolio{
-  background-color: #fbfafe
-}
-.product-portfolio .icon{
-  width: 20%;
-}
-.product-img img {
-  height: 300px;
-}
-
-.product-title {
-  font-size: .8rem;
-}
-.product-price{
-  font-size: 1rem;
-  color:#098036; 
-}
-
-/* product portfolio en */
-
-/******************** Single Product page css End *******************/
 
 
 /* footer start */
@@ -678,7 +429,320 @@ body, .form-control {
 
 /* footer end */
 
+/******************** Home page css Start *************************/
 
+/* banner start */
+
+.home .home-banner:hover .carousel-control-prev-icon,
+.home .home-banner:hover .carousel-control-next-icon{
+  display: block;
+}
+/* banner end */
+
+/*---product-item----*/
+.product, .sustainability{
+  background-color: #fbfafe;
+}
+.product .heading img{
+  width: 20%;
+}
+.product-item {
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.product-item-img img {
+  height: 300px;
+}
+
+.product-item-title {
+  font-size: .8rem;
+}
+.product-item-price{
+  font-size: 1rem;
+  color:#098036; 
+}
+.product:hover .slick-arrow,
+.banner:hover .slick-arrow {
+  display: block !important;
+}
+
+/* latest news start */
+.latest-news .heading img{
+  width: 15%;
+}
+/* Latest news end */
+
+/* Sustainability start */
+.sustainability-content .text{
+  line-height: 1.8;
+}
+.sustainability .heading img{
+  width: 15%;
+}
+/* Sustainability end */
+
+/* career start */
+
+.career .heading img{
+  width: 11%;
+}
+/* career end */
+/******************** Home page css End *************************/
+
+
+/******************** About us page css Start *******************/
+/* Company overview start */
+.overview .icon{
+  width: 20%;
+}
+/* company overview end */
+
+/* brand start */
+.brand .icon{
+  width: 20%;
+}
+.brand-item {
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.brand-item-img img {
+  height: 150px;
+}
+
+.brand-item-title {
+  font-size: .8rem;
+}
+.brand-item-price{
+  font-size: 1rem;
+  color:#098036; 
+}
+.brand:hover .slick-arrow {
+  display: block !important;
+}
+
+/* brand end */
+
+/* vision start */
+.vision .icon{
+  width: 20%;
+}
+/* vision end */
+
+/* Business Unit start */
+.business-unit .icon{
+  width: 20%;
+}
+.btn-link:target .plus-icon{
+  display: none;
+}
+
+#accordion button{
+  color: #098036;
+}
+/* Business Unit End */
+
+/******************** About us page css End *********************/
+
+
+/******************** Product page css Start *******************/
+/* products and services start */
+.product-services .icon{
+  width: 20%;
+}
+.product-services-content img{
+  height: 60px;
+  width: 50px;
+}
+
+.product-services-content .channel-icon,
+.product-services-content .location-icon{
+  height: 20px;
+  width: 20px;
+}
+
+.product-services-content .search-icon{
+  color: #098036;
+}
+
+.product-services-content .search-form {
+  background-color: transparent;
+  border-radius: .3rem; 
+}
+.product-services-content .search-form .form-group {
+    margin-bottom: 0; 
+}
+.product-services-content .search-form .form .input-group-text {
+    background-color: #eee;
+    border: none;
+}
+.product-services-content .search-form .form .cus-form-grp {
+    position: relative;
+    height: 50px; 
+}
+.product-services-content .search-form .form .cus-prepend {
+    position: absolute;
+    z-index: +1;
+    height: inherit; 
+}
+.product-services-content .search-form .form .cus-input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.product-services-content .search-form .form .cus-input .form-control {
+    padding-left: 40px; 
+}
+.product-services-content .search-form .form-control, .search-form .form select {
+    border: none;
+    background-color: #eee;
+    height: 50px;
+    font-size: 0.95rem;
+    padding-left: 0; 
+}
+
+.product-services-content .search-form .form-control:focus, 
+.product-services-content .search-form .form-control:focus-within, 
+.product-services-content .search-form .form select:focus, #home-banner 
+.product-services-content .search-form .form select:focus-within {
+    outline: none;
+    box-shadow: unset; 
+}
+.product-services-content .search-form .form-control::placeholder, .search-form .form select::placeholder {
+  font-style: italic; 
+}
+.product-services-content .search-form .form select {
+    cursor: pointer; 
+}
+.product-services-content .search-form .form .btn {
+    height: 50px;
+    background-color: #098036;
+    color: #fff;
+}
+
+/* products and services end */
+
+/******************** Product page css End *******************/
+
+
+/******************** Single Product page css Start *******************/
+
+/* single product start */
+.single-product-content .flag-img,
+.single-product-content .certify-img{
+  width: 90px;
+}
+.single-product-content .product-img{
+  width: 300px;
+}
+.single-product-content h3{
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.single-product-content h3 span{
+  letter-spacing: 6px;
+}
+/* single product end */
+
+/* product protfolio start */
+.product-portfolio{
+  background-color: #fbfafe
+}
+.product-portfolio .icon{
+  width: 20%;
+}
+.product-portfolio .card{
+ transition: 0.5s all ease;
+ -webkit-transition: 0.5s all ease;
+ -moz-transition: 0.5s all ease;
+ -ms-transition: 0.5s all ease;
+ -o-transition: 0.5s all ease;
+}
+.product-portfolio .card:hover{
+  box-shadow: 0 1px 10px #000;
+}
+.product-img img {
+  height: 300px;
+}
+
+.product-title {
+  font-size: .8rem;
+}
+.product-price{
+  font-size: 1rem;
+  color:#098036; 
+}
+
+/* product portfolio en */
+
+/******************** Single Product page css End *******************/
+
+
+/******************** Product details page css Start *******************/
+.product-details-content .product-img .card{
+  height: 100%;
+  flex-direction: row;
+  box-shadow: 0 0 2px #000;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  -ms-transition: .5s all ease;
+  -o-transition: .5s all ease;
+}
+.product-details-content .product-img .card:hover{
+  box-shadow: 0 1px 10px #000;
+}
+.product-details-content .product-img .card-body{
+  align-self: center;
+}
+.product-info .product-title{
+  font-size: 1.5rem;
+}
+.product-info .stock-status{
+  font-size: .7rem;
+  text-transform: capitalize;
+  color: #098036;
+}
+.product-info p{
+  font-size: 1.1rem;
+}
+.product-info .prev-price{
+  text-decoration: line-through;
+}
+
+.product-info .product-description .table{
+  font-size: .8rem;
+  margin-left: -10px;
+}
+.product-info .product-description .table td{
+  border: transparent;
+}
+
+.product-info .product-description h4{
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+/* related product start */
+.related-products{
+  background-color: #fbfafe;
+}
+.related-products:hover .slick-arrow {
+  display: block !important;
+}
+/* related product end */
+/******************** Product details page css End *****************/
+
+/******************** Single News page css Start ******************/
+.single-news-content .news-title img{
+  width: 20%;
+}
+/******************** Single News page css End *******************/
+
+
+/************ media query start **********/
 
 @media (max-width: 1200px) {
   body, .form-control {
@@ -732,6 +796,11 @@ body, .form-control {
     width: 20%;
   }
 
+  /* product details */
+  .product-details-content .product-img{
+    margin-bottom: 30px;
+  }
+
 }
 
 @media (max-width: 575.98px) {
@@ -743,8 +812,8 @@ body, .form-control {
     font-size: .7rem;
   }
   /* single prodtuct page */
-  .product-details-content .made-in,
-  .product-details-content .certify{
+  .single-product-content .made-in,
+  .single-product-content .certify{
     justify-content: center;
   }
 
@@ -756,6 +825,9 @@ body, .form-control {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .banner-text{
+    top: 30%;
+  }
 
 }
-/*# sourceMappingURL=style.css.map */
+/************ media query End **********/
