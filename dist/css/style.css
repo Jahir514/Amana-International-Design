@@ -661,7 +661,7 @@ body, .form-control {
  -o-transition: 0.5s all ease;
 }
 .product-portfolio .card:hover{
-  box-shadow: 0 1px 10px #000;
+  box-shadow: 0 1px 5px #000;
 }
 .product-img img {
   height: 300px;
@@ -692,7 +692,7 @@ body, .form-control {
   -o-transition: .5s all ease;
 }
 .product-details-content .product-img .card:hover{
-  box-shadow: 0 1px 10px #000;
+  box-shadow: 0 1px 5px #000;
 }
 .product-details-content .product-img .card-body{
   align-self: center;
