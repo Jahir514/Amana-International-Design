@@ -38,7 +38,13 @@
      .related product 
      
    7.News
+
    8.Single News
+   
+   9.Business With Us
+     .Terms and Conditions
+     .Supplier and Dealer
+     .Contact US
       
   
   
@@ -661,7 +667,7 @@ body, .form-control {
  -o-transition: 0.5s all ease;
 }
 .product-portfolio .card:hover{
-  box-shadow: 0 1px 5px #000;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.15);
 }
 .product-img img {
   height: 300px;
@@ -684,7 +690,7 @@ body, .form-control {
 .product-details-content .product-img .card{
   height: 100%;
   flex-direction: row;
-  box-shadow: 0 0 2px #000;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
   transition: .5s all ease;
   -webkit-transition: .5s all ease;
   -moz-transition: .5s all ease;
@@ -692,7 +698,7 @@ body, .form-control {
   -o-transition: .5s all ease;
 }
 .product-details-content .product-img .card:hover{
-  box-shadow: 0 1px 5px #000;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.15);
 }
 .product-details-content .product-img .card-body{
   align-self: center;
@@ -741,6 +747,82 @@ body, .form-control {
 }
 /******************** Single News page css End *******************/
 
+/******************** business with us page css Start **********/
+/* terms and condition start */
+.terms-conditions-content .agreement-img{
+  height: 400px;
+}
+.terms-conditions-content .card{
+  height: 100%;
+  flex-direction: row;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+}
+.terms-conditions-content .card-body{
+  align-self: center;
+}
+.terms-conditions-content .card:hover{
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.15);
+}
+.terms-conditions-content .hand-icon{
+  width: 15px;
+  height: 10px;
+}
+.terms-conditions-content h4, h5{
+  font-size: 1.2rem;
+}
+.terms-conditions-content h5{
+  font-weight: bold;
+}
+.terms-conditions-content p{
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* terms and condition end */
+
+/* supplier dealer start */
+.supplier-dealer{
+  background-color: #fbfafe;
+}
+.supplier-dealer .supplier .card,
+.supplier-dealer .dealer .card{
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+}
+.supplier-dealer .supplier .card:hover,
+.supplier-dealer .dealer .card:hover{
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.15);
+}
+.supplier-dealer-content a{
+  color: #000;
+}
+.supplier-dealer-content a:hover{
+  text-decoration: underline;
+}
+.supplier-dealer-content .pdf-icon{
+  height: 12px;
+}
+.supplier-dealer-content p{
+  margin: 0;
+}
+/* supplier dealer end */
+
+/* contact us start */
+
+.contact-us-content .form-control:focus {
+  border-color:#ced4da;
+  outline: 0;
+  box-shadow: none;
+}
+  /* contact us End */
+/******************** business with us page css End **********/
 
 /************ media query start **********/
 
@@ -759,6 +841,8 @@ body, .form-control {
     font-size: .5rem;
     
   }
+  /* business with us */
+
 }
 
 @media (max-width: 767.98px) {
