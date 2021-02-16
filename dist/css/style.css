@@ -45,9 +45,13 @@
      .Terms and Conditions
      .Supplier and Dealer
      .Contact US
-      
-  
-  
+
+  10.Career
+
+  11.Contact with us
+     .Contact Form
+     .Google Map
+
 */
 
 
@@ -154,6 +158,12 @@ a:hover {
 
 .pb-40 {
   padding-bottom: 40px;
+}
+.pb-35 {
+  padding-bottom: 35px;
+}
+.mb-35 {
+  margin-bottom: 35px;
 }
 
 .bg-blue {
@@ -557,11 +567,7 @@ body, .form-control {
 .product-services .icon{
   width: 20%;
 }
-.product-services-content img{
-  height: 60px;
-  width: 50px;
-}
-
+/* search start */
 .product-services-content .channel-icon,
 .product-services-content .location-icon{
   height: 20px;
@@ -626,6 +632,36 @@ body, .form-control {
     background-color: #098036;
     color: #fff;
 }
+/* search end */
+
+/* All product start */
+.product-services-content .product-by-category img{
+  height: 70px;
+  width: 70px;
+}
+
+.product-services-content .product-by-category h3{
+  font-size: 1.4rem;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.product-services-content .product-by-category h3::after{
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.product-services-content .product-by-category:not(:nth-child(even)) h3::after{
+  bottom: 0;
+  left: 0;
+}
+.product-services-content .product-by-category:not(:nth-child(odd)) h3::after{
+  bottom: 0;
+  right:0;
+}
+/* All product end */
 
 /* products and services end */
 
@@ -816,13 +852,53 @@ body, .form-control {
 
 /* contact us start */
 
-.contact-us-content .form-control:focus {
+.form-control:focus {
   border-color:#ced4da;
   outline: 0;
   box-shadow: none;
 }
   /* contact us End */
 /******************** business with us page css End **********/
+
+/******************** Career page css Start **********/
+.career-content .heading img{
+  width: 20%;
+}
+.career-content .card-header{
+    padding: .30rem 1.25rem;
+}
+.career-content .card-header .btn-link{
+  padding-left: 0;
+  color: #000 !important;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.career-content .card-body ul{
+  padding-left: 17px;
+}
+.career-content .card-body p a{
+  color: #098036;
+}
+/******************** Career page css End **********/
+
+/******************** Contact us page css Start **********/
+/* contact form start */
+.contact-form-content .heading img{
+  width: 20%;
+}
+/* contact form end */
+
+/* map start */
+.map-content{
+  background-color: #fbfafe;
+}
+.map-content iframe{
+  width: 100%;
+  height: 500px;
+}
+/* map end */
+
+/******************** Contact us page css End **********/
 
 /************ media query start **********/
 
@@ -841,7 +917,10 @@ body, .form-control {
     font-size: .5rem;
     
   }
-  /* business with us */
+  /* product */
+  .product-services-content .product-by-category h3::after{
+    width: 65%;
+  }
 
 }
 
@@ -884,6 +963,10 @@ body, .form-control {
   .product-details-content .product-img{
     margin-bottom: 30px;
   }
+  /* contact us */
+  .map-content iframe{
+    height: 350px;
+  }
 
 }
 
@@ -900,6 +983,10 @@ body, .form-control {
   .single-product-content .certify{
     justify-content: center;
   }
+  /* product */
+  .product-services-content .product-by-category h3::after{
+    width: 70%;
+  }
 
 }
 
@@ -911,6 +998,14 @@ body, .form-control {
   }
   .banner-text{
     top: 30%;
+  }
+  /* contact us */
+  .map-content iframe{
+    height: 250px;
+  }
+  /* product */
+  .product-services-content .product-by-category h3::after{
+    width: 100%;
   }
 
 }
