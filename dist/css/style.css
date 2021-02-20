@@ -290,7 +290,7 @@ body, .form-control {
 
 .navbar-brand .logo-text p{
   font-size: .7rem;
-  margin: 5px 0 0 2px ;
+  margin: 5px 0 0 2px;
 }
 .custom-nav .nav-item {
   margin-left: 1.5rem;
@@ -635,7 +635,7 @@ body, .form-control {
 /* search end */
 
 /* All product start */
-.product-services-content .product-by-category img{
+.product-page .product-services-content .product-by-category img{
   height: 70px;
   width: 70px;
 }
@@ -666,6 +666,37 @@ body, .form-control {
 /* products and services end */
 
 /******************** Product page css End *******************/
+
+
+/******************** Product-1 page css Start *******************/
+/* All product start */
+.product-1-page .product-services-content .product-by-category .icon{
+  width: 12%;
+}
+.product-1-page .product-services-content .product-by-category .card{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  line-height: 100px;
+}
+.product-1-page .product-services-content .product-by-category .product-img{
+  height: 70px;
+  width: 70px;
+}
+
+.product-services-content .product-by-category h4{
+  font-size: 1.4rem;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+
+/* All product end */
+/******************** Product-1 page css End *******************/
 
 
 /******************** Single Product page css Start *******************/
