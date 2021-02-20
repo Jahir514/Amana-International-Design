@@ -218,59 +218,43 @@
                             <div class="brand-item-img pb-3">
                                 <img src="images/3_product page 2.png" alt="brand image 1" class="img-fluid mx-auto">
                             </div>
-                            <h5 class="brand-item-title"> Extra virgin oil 250gm </h5>
-                            <h5 class="brand-item-price"> Tk. 500.00 </h5>
                         </div>
                         <div class="item brand-item text-center">
                             <div class="brand-item-img pb-3">
                                 <img src="images/3_product page 1.png" alt="brand image 1" class="img-fluid mx-auto">
                             </div>
-                            <h5 class="brand-item-title"> Extra virgin oil 250gm </h5>
-                            <h5 class="brand-item-price"> Tk. 500.00 </h5>
                         </div>
                         <div class="item brand-item text-center">
                             <div class="brand-item-img pb-3">
                                 <img src="images/3_product page 4.png"
                                     alt="brand image 3" class="img-fluid mx-auto">
                             </div>
-                            <h5 class="brand-item-title"> Extra virgin oil 250gm </h5>
-                            <h5 class="brand-item-price"> Tk. 500.00 </h5>
                         </div>
                         <div class="item brand-item text-center">
                             <div class="brand-item-img pb-3">
                                 <img src="images/3_product page 2.png"
                                     alt="Product image 1" class="img-fluid mx-auto">
                             </div>
-                            <h5 class="brand-item-title"> Extra virgin oil 250gm </h5>
-                            <h5 class="brand-item-price"> Tk. 500.00 </h5>
                         </div>
                         <div class="item brand-item text-center">
                             <div class="brand-item-img pb-3">
                                 <img src="images/3_product page.png" alt="Product image 1" class="img-fluid mx-auto">
                             </div>
-                            <h5 class="brand-item-title"> Extra virgin oil 250gm </h5>
-                            <h5 class="brand-item-price"> Tk. 500.00 </h5>
                         </div>
                         <div class="item brand-item text-center">
                             <div class="brand-item-img pb-3">
                                 <img src="images/3_product page 2.png" alt="brand image 1" class="img-fluid mx-auto">
                             </div>
-                            <h5 class="brand-item-title"> Extra virgin oil 250gm </h5>
-                            <h5 class="brand-item-price"> Tk. 500.00 </h5>
                         </div>
                         <div class="item brand-item text-center">
                             <div class="brand-item-img pb-3">
                                 <img src="images/3_product page 4.png" alt="Product image 1" class="img-fluid mx-auto">
                             </div>
-                            <h5 class="brand-item-title"> Extra virgin oil 250gm </h5>
-                            <h5 class="brand-item-price"> Tk. 500.00 </h5>
                         </div>
                         <div class="item brand-item text-center">
                             <div class="brand-item-img pb-3">
                                 <img src="images/3_product page 1.png" alt="brand image 1" class="img-fluid mx-auto">
                             </div>
-                            <h5 class="brand-item-title"> Extra virgin oil 250gm </h5>
-                            <h5 class="brand-item-price"> Tk. 500.00 </h5>
                         </div>
                         <div class="item brand-item text-center">
                             <div class="brand-item-img pb-3">
@@ -283,8 +267,6 @@
                             <div class="brand-item-img pb-3">
                                 <img src="images/3_product page.png" alt="Product image 1" class="img-fluid mx-auto">
                             </div>
-                            <h5 class="brand-item-title"> Extra virgin oil 250gm </h5>
-                            <h5 class="brand-item-price"> Tk. 500.00 </h5>
                         </div>
                     </div>
 
@@ -332,6 +314,7 @@
                                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                                     aria-expanded="true" aria-controls="collapseOne">
                                     <span></span> All Beauty
+                                    <i class="fa fa-minus"></i>
                                 </button>
                             </h5>
                         </div>
@@ -357,6 +340,7 @@
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                     aria-expanded="false" aria-controls="collapseTwo">
                                     All Sales And distribution
+                                    <i class="fa fa-plus"></i>
                                 </button>
                             </h5>
                         </div>
@@ -380,6 +364,7 @@
                                 <button class="btn btn-link collapsed" data-toggle="collapse"
                                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     All Beauty
+                                    <i class="fa fa-plus"></i>
                                 </button>
                             </h5>
                         </div>
@@ -515,6 +500,23 @@
     <script src="js/plugins/slick.min.js"></script>
     <!-- project script -->
     <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#accordion .card .btn-link").click(function () {
+                if ($(this).find("i.fa").hasClass("fa-minus")) {
+                    $(this).find("i.fa").removeClass("fa-minus");
+                    $(this).find("i.fa").addClass("fa-plus");
+                }
+                else if ($(this).find("i.fa").hasClass("fa-plus")) {
+                    $(this).find("i.fa").removeClass("fa-plus");
+                    $(this).find("i.fa").addClass("fa-minus");
+                }
+
+                $(this).parents(".card").siblings().find(".card-header .btn-link i.fa").removeClass("fa-minus");
+                $(this).parents(".card").siblings().find(".card-header .btn-link i.fa").addClass("fa-plus");
+            });
+        });
+    </script>
 </body>
 
 </html>

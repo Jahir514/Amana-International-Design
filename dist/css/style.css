@@ -556,6 +556,17 @@ body, .form-control {
 
 #accordion button{
   color: #098036;
+  padding-left: 15px;
+  text-decoration: none;
+}
+.business-unit #accordion .btn-link{
+  position: relative;
+  display: block;
+}
+.business-unit #accordion .btn-link .fa{
+  position: absolute;
+  top: 10px;
+  left: -6px;
 }
 /* Business Unit End */
 
@@ -564,106 +575,21 @@ body, .form-control {
 
 /******************** Product page css Start *******************/
 /* products and services start */
-.product-services .icon{
+.product-page .icon{
   width: 20%;
 }
-/* search start */
-.product-services-content .channel-icon,
-.product-services-content .location-icon{
-  height: 20px;
-  width: 20px;
-}
-
-.product-services-content .search-icon{
-  color: #098036;
-}
-
-.product-services-content .search-form {
-  background-color: transparent;
-  border-radius: .3rem; 
-}
-.product-services-content .search-form .form-group {
-    margin-bottom: 0; 
-}
-.product-services-content .search-form .form .input-group-text {
-    background-color: #eee;
-    border: none;
-}
-.product-services-content .search-form .form .cus-form-grp {
-    position: relative;
-    height: 50px; 
-}
-.product-services-content .search-form .form .cus-prepend {
-    position: absolute;
-    z-index: +1;
-    height: inherit; 
-}
-.product-services-content .search-form .form .cus-input {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-.product-services-content .search-form .form .cus-input .form-control {
-    padding-left: 40px; 
-}
-.product-services-content .search-form .form-control, .search-form .form select {
-    border: none;
-    background-color: #eee;
-    height: 50px;
-    font-size: 0.95rem;
-    padding-left: 0; 
-}
-
-.product-services-content .search-form .form-control:focus, 
-.product-services-content .search-form .form-control:focus-within, 
-.product-services-content .search-form .form select:focus, #home-banner 
-.product-services-content .search-form .form select:focus-within {
-    outline: none;
-    box-shadow: unset; 
-}
-.product-services-content .search-form .form-control::placeholder, .search-form .form select::placeholder {
-  font-style: italic; 
-}
-.product-services-content .search-form .form select {
-    cursor: pointer; 
-}
-.product-services-content .search-form .form .btn {
-    height: 50px;
-    background-color: #098036;
-    color: #fff;
-}
-/* search end */
-
-/* All product start */
-.product-page .product-services-content .product-by-category img{
-  height: 70px;
-  width: 70px;
-}
-
-.product-services-content .product-by-category h3{
-  font-size: 1.4rem;
-  position: relative;
-  padding-bottom: 8px;
-}
-
-.product-services-content .product-by-category h3::after{
-  content: "";
-  position: absolute;
-  width: 60%;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.product-services-content .product-by-category:not(:nth-child(even)) h3::after{
-  bottom: 0;
-  left: 0;
-}
-.product-services-content .product-by-category:not(:nth-child(odd)) h3::after{
-  bottom: 0;
-  right:0;
-}
-/* All product end */
 
 /* products and services end */
+
+/* our partners start */
+.our-partners{
+  background-color: #fbfafe;
+}
+.our-partners:hover .slick-arrow {
+  display: block !important;
+}
+
+/* our partners end */
 
 /******************** Product page css End *******************/
 
