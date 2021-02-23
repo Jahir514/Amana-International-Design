@@ -447,13 +447,13 @@ body, .form-control {
 
 /******************** Home page css Start *************************/
 
-/* banner start */
-
-.home .home-banner:hover .carousel-control-prev-icon,
-.home .home-banner:hover .carousel-control-next-icon{
-  display: block;
+/* banner home page start */
+.home-page .home-banner iframe{
+  width: 100%;
+  height: 550px;
 }
-/* banner end */
+
+/* banner home end */
 
 /*---product-item----*/
 .product, .sustainability{
@@ -903,6 +903,10 @@ body, .form-control {
     padding-bottom: .4rem;
   }
 
+  .home-page .home-banner iframe{
+    height: 500px;
+  }
+
   .product .heading img{
     width: 30%;
   }
@@ -935,6 +939,9 @@ body, .form-control {
   .banner-text {
     font-size: .7rem;
   }
+  .home-page .home-banner iframe{
+    height: 400px;
+  }
   /* single prodtuct page */
   .single-product-content .made-in,
   .single-product-content .certify{
@@ -955,6 +962,9 @@ body, .form-control {
   }
   .banner-text{
     top: 30%;
+  }
+  .home-page .home-banner iframe{
+    height: 300px;
   }
   /* contact us */
   .map-content iframe{
