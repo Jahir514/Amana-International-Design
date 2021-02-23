@@ -123,10 +123,16 @@ a:hover {
 .btn-theme {
   background-color: #098036;
   color: #ffffff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  pointer: default;
 }
 
 .btn-theme:hover {
-  background-color: #0fbd51;
+  background-color: #18a84f;
   color: #ffffff;
 }
 
@@ -448,9 +454,13 @@ body, .form-control {
 /******************** Home page css Start *************************/
 
 /* banner home page start */
-.home-page .home-banner iframe{
-  width: 100%;
-  height: 550px;
+.home-page .home-banner{ 
+  height: 500px;
+}
+.home-page .home-banner video{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
 }
 
 /* banner home end */
@@ -821,22 +831,61 @@ body, .form-control {
 .career-content .heading img{
   width: 20%;
 }
-.career-content .card-header{
-    padding: .30rem 1.25rem;
+
+.career-content .job-list .heading{
+ background-color: rgba(9, 128, 54, .9);
 }
-.career-content .card-header .btn-link{
-  padding-left: 0;
-  color: #000 !important;
-  text-decoration: none;
-  font-size: 1.4rem;
+.career-content .job-list .heading h5{
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+
 }
-.career-content .card-body ul{
-  padding-left: 17px;
+.career-content .job-list .heading select{
+  padding: 10px;
 }
-.career-content .card-body p a{
-  color: #098036;
+.job-list a{
+  color: #000;
 }
+.job-list p{
+  margin-bottom: 0;
+}
+.job-list-content{
+  border-bottom: 1px solid #ddd;
+}
+.job-list-content h5{
+  font-size: 1.1rem;
+}
+
+.job-list-content:hover{
+  border-left: 5px solid rgba(9, 128, 54, .9);
+}
+
+
 /******************** Career page css End **********/
+
+/******************** Job Description page css Start **********/
+/* heading start */
+.heading p{
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.heading i{
+  font-size: 18px;
+  margin-right: 8px;
+}
+.heading .vacency p, 
+.heading .experience p{
+  
+}
+
+/* heading end */
+
+
+/******************** Job Description page css End **********/
 
 /******************** Contact us page css Start **********/
 /* contact form start */
@@ -903,7 +952,7 @@ body, .form-control {
     padding-bottom: .4rem;
   }
 
-  .home-page .home-banner iframe{
+  .home-page .home-banner{
     height: 500px;
   }
 
@@ -939,7 +988,7 @@ body, .form-control {
   .banner-text {
     font-size: .7rem;
   }
-  .home-page .home-banner iframe{
+  .home-page .home-banner{
     height: 400px;
   }
   /* single prodtuct page */
@@ -963,7 +1012,7 @@ body, .form-control {
   .banner-text{
     top: 30%;
   }
-  .home-page .home-banner iframe{
+  .home-page .home-banner{
     height: 300px;
   }
   /* contact us */
