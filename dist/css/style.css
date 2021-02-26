@@ -858,6 +858,20 @@ body, .form-control {
 }
 .job-list-content{
   border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.job-list-content::after{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 5px;
+  left: 0;
+  background-color: #098036;
+  top: 0;
+  display: none;
+}
+.job-list-content:hover::after{
+  display: block;
 }
 .job-list-content h5{
   font-size: 1.1rem;
@@ -870,9 +884,6 @@ body, .form-control {
   color: rgba(0, 0, 0, 0.6)
 }
 
-.job-list-content:hover{
-  border-left: 5px solid rgba(9, 128, 54, .9);
-}
 
 
 /******************** Career page css End **********/
