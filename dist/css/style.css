@@ -910,12 +910,14 @@ body, .form-control {
   font-size: 18px;
   margin-right: 8px;
 }
-.heading .vacency p, 
-.heading .experience p{
-  
+/* heading end */
+
+/* about job start */
+.about-job .btn a {
+  color: #ffffff;
 }
 
-/* heading end */
+/* about job end */
 
 
 /******************** Job Description page css End **********/
