@@ -961,7 +961,7 @@ body, .form-control {
 .FAQ ol li{
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .FAQ .hand-icon{
   width: 20px;
@@ -973,6 +973,14 @@ body, .form-control {
 }
 
 /******************** FAQ page css End **********/
+
+/******************** Sustainability page css start **********/
+.sustainability .heading img{
+  width: 20%;
+}
+
+
+/******************** Sustainability page css End **********/
 
 /************ media query start **********/
 
@@ -1061,8 +1069,11 @@ body, .form-control {
 
 @media (max-width: 575.98px) {
   
-  .banner-text h2{
-    font-size: 1.3rem;
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 18px;
   }
   .banner-text {
     font-size: .7rem;
